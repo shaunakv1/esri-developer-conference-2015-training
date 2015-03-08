@@ -1,0 +1,8 @@
+{"description":"'Soft drinks","categoryID":"1","categoryName":"Beverages"}
+{"categoryID":"2","categoryName":"Condiments","description":"'Sweet and savory sauces"}
+{"categoryName":"Confections","categoryID":"3","description":"'Desserts"}
+{"description":"Cheeses","categoryName":"Dairy Products","categoryID":"4"}
+{"categoryID":"5","categoryName":"Grains/Cereals","description":"'Breads"}
+{"description":"Prepared meats","categoryName":"Meat/Poultry","categoryID":"6"}
+{"categoryName":"Produce","categoryID":"7","description":"Dried fruit and bean curd"}
+{"description":"Seaweed and fish","categoryID":"8","categoryName":"Seafood"}

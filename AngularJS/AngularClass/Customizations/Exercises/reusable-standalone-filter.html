@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="filterApp">
+<head>
+  <title>Custom Filter Example</title>
+  <script src="/common/js/angular/angular.js"></script>
+
+</head>
+<body ng-controller="FilterCtrl">
+<h2>Baseball teams!</h2>
+
+<div>
+  <label for="teamName">Teams that start with <!--or end with--> this string:</label>
+  <input type="text" ng-model="teamName" id="teamName"/>
+</div>
+
+<div ng-if="teams">
+  <ul ng-repeat="team in (teams | sw:teamName) ">
+  <!--<ul ng-repeat="team in teams | betterThan:0.525:90 | filter:startsWith">-->
+    <li>{{ team.city + ' ' + team.team}}</li>
+    <li style="list-style: none">
+      <ul>
+        <li>Won: {{ team.won }}</li>
+        <li>Lost: {{ team.lost }}</li>
+        <li>Pct: {{team.win_percentage}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<script src="filters.js"></script>
+<script src="reusable-standalone-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<h2>About to edit employee # {{employeeID}}</h2>
+<form name="EditForm" novalidate>
+  <label for="e.firstName">First Name: </label>
+  <input type="text" name="firstName" id="e.firstName" ng-model="e.firstName"
+         ng-required="true"/> | Valid: {{EditForm.firstName.$valid}}<br/>
+  <label for="e.title">Title: </label>
+  <input type="text" id="e.title" ng-model="e.title" ng-trim="false"/>
+  <button ng-click="updateEmployee(e)">Update employee</button>
+</form>

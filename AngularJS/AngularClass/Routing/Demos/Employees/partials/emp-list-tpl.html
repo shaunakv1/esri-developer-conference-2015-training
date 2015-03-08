@@ -1,0 +1,11 @@
+<table>
+  <tr ng-repeat="e in employees">
+    <td>{{e.firstName}} {{e.lastName}}</td>
+    <td>
+      <button ng-click="getDetails(e.employeeID, $event)">Details</button>
+    </td>
+    <td>
+      <button ng-click="edit(e.employeeID)">Edit</button>
+    </td>
+  </tr>
+</table>

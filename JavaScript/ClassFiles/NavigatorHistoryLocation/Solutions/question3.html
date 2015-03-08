@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>History Test: Question 3</title>
+<script type="text/javascript">
+	history.go(1);
+	var s = location.search;
+ 	var start = s.indexOf("=")+1;
+	var answer = s.substring(start);
+	var response = (answer == "Washington") ? "Right!" : "Wrong!";
+</script>
+</head>
+<body>
+<p style="font-weight:bold;">
+	<script type="text/javascript">
+		document.write("Your answer was: " + answer + ". " + response);
+	</script>
+</p>
+<form action="end-quiz.html">
+	Which president was known as "His Excellency?"<br>
+	<input type="radio" name="answer" value="Lincoln">Abraham Lincoln<br>
+	<input type="radio" name="answer" value="McKinley">William McKinley<br>
+	<input type="radio" name="answer" value="Washington">George Washington<br>
+	<input type="radio" name="answer" value="Kennedy">John F. Kennedy<br>
+	<input type="submit" value="Answer"><br>
+	<input type="button" onclick="location.href='start-quiz.html';" value="Start Over">
+</form>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="teamApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/common/css/bootstrap/bootstrap.css"/>
+
+  <title>Displaying team information</title>
+
+  <style>
+    #team-list li {
+      list-style-type: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div id="main-container" ng-controller="MainCtrl">
+  <div class="row">
+    <div id="team-list" class="col-md-4">
+      <ul>
+        <li ng-repeat="team in teams" ng-click="getTeamDetail(team)">{{ team.city + ' ' + team.team }}</li>
+      </ul>
+    </div>
+
+    <!-- Use an attribute "team-display" and set it equal to "currentTeam" -->
+    <div id="team-detail" class="col-md-8">
+      <!-- Take the contents of this div and move them into their own template.
+           Call it team-display-tpl.html. -->
+      <ul>
+        <li>{{ currentTeam.city + ' ' + currentTeam.team }}</li>
+        <li>{{ currentTeam.won }} - {{ currentTeam.lost }} ({{ currentTeam.win_percentage }})</li>
+        <li>Finished: {{ currentTeam.rank | ordinal}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="/common/js/angular/angular.js"></script>
+<script src="team-display.js"></script>
+</body>
+</html>

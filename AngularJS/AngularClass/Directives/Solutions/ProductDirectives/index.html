@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="ProductBrowser">
+<head>
+  <title>Routing for a Product browser</title>
+  <style>
+    .link-like {
+      cursor: pointer;
+      cursor: hand;
+    }
+  </style>
+</head>
+<body>
+<div id="product-container" ng-controller="ProductCtrl">
+
+  <h2>Browse our Products!</h2>
+
+  <div id="product-list-container" ng-view></div>
+
+</div>
+
+<script src="/common/js/angular/angular.js"></script>
+<script src="/common/js/angular-route/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+
+<!-- Load js/directives.js -->
+<script src="js/directives.js"></script>
+
+<!-- Then go to controllers.js and follow the directions there. -->
+</body>
+</html>

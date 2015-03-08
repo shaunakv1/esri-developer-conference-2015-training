@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="teamApp">
+<head>
+  <title>Exercise: Setting up a controller</title>
+</head>
+<body ng-controller="TeamCtrl">
+<form>
+  <label for="fTeam">Filter teams: </label>
+  <input id="fTeam" type="text" ng-model="fTeam" /><br/>
+
+  <!-- Add an input item for adding a new team;
+  don't forget the label and the ng-model -->
+
+  <!-- Add a button to click on to add the new team -->
+
+  <!-- Add a select list of all the teams, it will be used to drop teams
+       from the list.
+   Hint: look at select/ngOptions under directives in the API docs.
+   Don't forget the ng-model!
+   -->
+
+  <!-- Add a button to click on to remove the selected team -->
+
+  <!-- Challenge: restore the dropped teams, put the button here -->
+
+
+</form>
+
+<p>A list of teams: </p>
+<ul>
+  <li ng-repeat="teamName in teams | filter: fTeam">{{teamName}}</li>
+</ul>
+
+<script src="/common/js/angular/angular.js"></script>
+<script src="js/controllers-events.js"></script>
+</body>
+</html>

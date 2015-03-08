@@ -1,0 +1,39 @@
+	public static String writeXml(Event event) {
+		XmlSerializer serializer = Xml.newSerializer();
+		StringWriter writer = new StringWriter();
+		try {
+			serializer.setOutput(writer);
+			serializer.startDocument("UTF-8", true);
+			serializer.startTag("", "events");
+
+			serializer.startTag("", "event");
+
+			serializeTag(serializer, "id", event.getId());
+			serializeTag(serializer, "date", event.getDate().toLocaleString());
+			serializeTag(serializer, "title", event.getTitle());
+			serializeTag(serializer, "street", event.getStreet());
+			serializeTag(serializer, "city", event.getCity());
+			serializeTag(serializer, "state", event.getState());
+			serializeTag(serializer, "zip", event.getZip());
+			serializeTag(serializer, "latitude", Double.toString(event.getLatitude()));
+			serializeTag(serializer, "longitude", Double.toString(event.getLongitude()));
+			serializeTag(serializer, "rating", Float.toString(event.getRating()));
+			serializeTag(serializer, "description", event.getDescription());
+
+			serializer.endTag("", "event");
+
+			serializer.endTag("", "events");
+			serializer.endDocument();
+			return writer.toString();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	private static void serializeTag(XmlSerializer serializer, String tagName, String tagValue) throws IOException {
+		serializer.startTag("", tagName);
+		if (tagValue != null) {
+			serializer.text(tagValue);
+		}
+		serializer.endTag("", tagName);
+	}

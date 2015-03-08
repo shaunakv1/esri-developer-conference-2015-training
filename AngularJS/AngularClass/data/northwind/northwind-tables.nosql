@@ -1,0 +1,12 @@
+db.createCollection("Categories")
+db.createCollection("Customers")
+db.createCollection("Employees")
+db.createCollection("EmployeeTerritories")
+db.createCollection("Order")_Details
+db.createCollection("Orders")
+db.createCollection("Products")
+db.createCollection("Region")
+db.createCollection("Shippers")
+db.createCollection("Suppliers")
+db.createCollection("Territories")
+db.createCollection("USStates")

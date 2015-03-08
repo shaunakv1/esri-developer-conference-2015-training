@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date Object</title>
+</head>
+<body>
+<h1>Date Object</h1>
+<h2>New Date object with current date and time</h2>
+<pre>
+//Syntax: new Date();
+var now = new Date();
+</pre>
+<strong>Result:</strong>
+<script type="text/javascript">
+	var now = new Date();
+	document.write(now);
+</script>
+
+<h2>New Date object with specific date and time</h2>
+<pre>
+//Syntax: new Date("month dd, yyyy hh:mm:ss);
+var redSoxWin = new Date("October 21, 2004 12:01:00");
+</pre>
+<strong>Result:</strong>
+<script type="text/javascript">
+	var redSoxWin = new Date("October 21, 2004 12:01:00");
+	document.write(redSoxWin);
+</script>
+
+<pre>
+//Syntax: new Date(year, month, day, hours, min, sec, millisec);
+redSoxWin = new Date(2004, 9, 21, 12, 01, 00, 00);
+</pre>
+<strong>Result:</strong>
+<script type="text/javascript">
+	redSoxWin = new Date(2004, 9, 21, 12, 01, 00, 00);
+	document.write(redSoxWin);
+</script>
+</body>
+</html>
+

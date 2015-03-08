@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>The equality operators</title>
+<script type="text/javascript">
+	var WORD_STR = "foo";
+	var WORD_OBJ = new String("foo");
+	
+	alert("WORD_STR is a " + typeof WORD_STR);
+	alert("WORD_OBJ is an " + typeof WORD_OBJ);
+	
+	//The == operator checks to see if the two arguments
+	//have the save value but does not check data type
+	if (WORD_STR == WORD_OBJ){
+		alert("The two have the same values!");
+	} else {
+		alert("The two have different values!");
+	}
+	
+	//The === operator checks to see if the two arguments
+	//have the save value and are of the same data type
+	if (WORD_STR === WORD_OBJ){
+		alert("The two are identical!");
+	} else {
+		alert("The two are not identical!");
+	}
+</script>
+</head>
+<body>
+Nothing to show here.
+</body>
+</html>
+

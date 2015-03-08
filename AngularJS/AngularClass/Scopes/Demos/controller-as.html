@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="introApp">
+<head>
+  <title>A simple controller</title>
+</head>
+<!-- Reference the controller function with ng-controller -->
+<body ng-controller="FirstCtrl as myCtrl">
+<p>Here is foo, accessed via scope resolution: {{ foo }}</p>
+<p>Here are some names:</p>
+<ul>
+  <li ng-repeat="personName in myCtrl.names | filter:myCtrl.fName">{{personName}}</li>
+</ul>
+<form>
+  <label for="fName">Filter names: </label>
+  <input id="fName" type="text" ng-model="myCtrl.fName"/>
+</form>
+
+<script src="/common/js/angular/angular.js"></script>
+
+<!-- Add a script block with a function that will act as a controller -->
+<script src="js/controller-as.js"></script>
+</body>
+</html>

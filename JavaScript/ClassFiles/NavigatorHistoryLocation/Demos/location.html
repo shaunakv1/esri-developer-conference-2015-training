@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Location Info</title>
+</head>
+<body>
+<h1>location Object Properties</h1>
+<ol>
+	<li><a href="?firstName=Nat">Add Search</a></li>
+	<li><a href="#props">Add Hash</a></li>
+	<li><a href="javascript:location.replace('#props')">Add Hash with <code>replace()</code></a></li>
+	<li><a href="javascript:location.assign('#props')">Add Hash with <code>assign()</code></a></li>
+	<li><a href="javascript:location.reload()">Reload</a></li>
+	<li><a href="location.html">Start Over</a></li>
+</ol>
+
+<ol id="props">
+	<li>href: <strong><script type="text/javascript">document.write(location.href);</script></strong></li>
+	<li>protocol: <strong><script type="text/javascript">document.write(location.protocol);</script></strong></li>
+	<li>host: <strong><script type="text/javascript">document.write(location.host);</script></strong></li>
+	<li>hostname: <strong><script type="text/javascript">document.write(location.hostname);</script></strong></li>
+	<li>port: <strong><script type="text/javascript">document.write(location.port);</script></strong></li>
+	<li>pathname: <strong><script type="text/javascript">document.write(location.pathname);</script></strong></li>
+	<li>search: <strong><script type="text/javascript">document.write(location.search);</script></strong></li>
+	<li>hash: <strong><script type="text/javascript">document.write(location.hash);</script></strong></li>
+	<li>history.length: <strong><script type="text/javascript">document.write(history.length);</script></strong></li>
+</ol>
+</body>
+</html>
+

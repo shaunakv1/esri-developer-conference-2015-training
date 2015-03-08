@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date Methods</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var rightNow = new Date();
+</script>
+</head>
+<body>
+<h1>Date Methods</h1>
+<span class="code">rightNow</span> contains
+"<strong><script type="text/javascript">document.write(rightNow);</script></strong>".
+<table cellpadding="3" cellspacing="0">
+	<tr>
+		<th>Method</th>
+		<th>Explanation</th>
+		<th>Code</th>
+		<th style="text-align:center">Returns</th>
+	</tr>
+	<tr>
+		<td class="code">getDate()</td>
+		<td>Returns the day of the month (1-31).</td>
+		<td class="codenobr">rightNow.getDate()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getDate());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getDay()</td>
+		<td>Returns the day of the week as a number (0-6, 0=Sunday, 6=Saturday).</td>
+		<td class="codenobr">rightNow.getDay()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getDay());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getMonth()</td>
+		<td>Returns the month as a number (0-11, 0=January, 11=December).</td>
+		<td class="codenobr">rightNow.getMonth()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getMonth());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getFullYear()</td>
+		<td>Returns the four-digit year.</td>
+		<td class="codenobr">rightNow.getFullYear()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getFullYear());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getHours()</td>
+		<td>Returns the hour (0-23).</td>
+		<td class="codenobr">rightNow.getHours()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getHours());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getMinutes()</td>
+		<td>Returns the minute (0-59).</td>
+		<td class="codenobr">rightNow.getMinutes()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getMinutes());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getSeconds()</td>
+		<td>Returns the second (0-59).</td>
+		<td class="codenobr">rightNow.getSeconds()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getSeconds());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getMilliseconds()</td>
+		<td>Returns the millisecond (0-999).</td>
+		<td class="codenobr">rightNow.getMilliseconds()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getMilliseconds());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getTime()</td>
+		<td>Returns the number of milliseconds since midnight January 1, 1970.</td>
+		<td class="codenobr">rightNow.getTime()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getTime());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">getTimezoneOffset()</td>
+		<td>Returns the time difference in minutes between the user's computer and GMT.</td>
+		<td class="codenobr">rightNow.getTimezoneOffset()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.getTimezoneOffset());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">toLocaleString()</td>
+		<td>Returns the Date object as a string.</td>
+		<td class="codenobr">rightNow.toLocaleString()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.toLocaleString());
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">toGMTString()</td>
+		<td>Returns the Date object as a string in GMT timezone.</td>
+		<td class="codenobr">rightNow.toGMTString()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(rightNow.toGMTString());
+		</script></td>
+	</tr>
+</table>
+</body>
+</html>

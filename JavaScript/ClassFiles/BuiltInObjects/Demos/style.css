@@ -1,0 +1,24 @@
+table {
+	margin:auto;	
+}
+
+tr {
+	vertical-align:top;
+}
+
+td, th {
+	border:1px solid #006;
+}
+
+p {
+	text-align:center;
+}
+
+.code {
+	font-family:"Courier New", Courier, mono;
+}
+
+.codenobr {
+	font-family:"Courier New", Courier, mono;
+	white-space:nowrap;
+}

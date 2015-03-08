@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="directApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Our first directive</title>
+  <script src="/common/js/angular/angular.js"></script>
+  <script src="first-directive.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+
+<h2>Experimenting with directives</h2>
+
+<div>
+  <label for="someName">Enter some name: </label><input type="text" id="someName" ng-model="someName"/>
+</div>
+
+<div>
+  <ul>
+    <li>Another directive with a value:</li>
+    <!--<li>{{ someName }}</li>-->
+    <li greet-person="{{ someName }}"></li>
+  </ul>
+</div>
+<p data-hello-world="Fred"></p>
+
+<p>Let's try this with a stand-alone tag: <hello-world style="background-color:yellow"/></p>
+
+<ul>
+  <li>One</li>
+  <li class="hello-world">Two</li>
+  <li>Three</li>
+</ul>
+
+
+</body>
+</html>

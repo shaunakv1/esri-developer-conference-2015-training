@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math Properties and Methods</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Math Properties and Methods</h1>
+<h2>Properties</h2>
+<table cellpadding="3" cellspacing="0">
+	<tr>
+		<th>Property</th>
+		<th>Explanation</th>
+		<th>Code</th>
+		<th style="text-align:center">Returns</th>
+	</tr>
+	<tr>
+		<td class="code">Math.PI</td>
+		<td>Pi (&pi;)</td>
+		<td class="codenobr">Math.PI</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.PI);
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.SQRT2</td>
+		<td>Square root of 2.</td>
+		<td class="codenobr">Math.SQRT2</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.SQRT2);
+		</script></td>
+	</tr>
+</table>
+<h2>Methods</h2>
+<table border="1" cellpadding="3" cellspacing="0">
+	<tr>
+		<th>Method</th>
+		<th>Explanation</th>
+		<th>Code</th>
+		<th style="text-align:center">Returns</th>
+	</tr>
+	<tr>
+		<td class="code">Math.abs(number)</td>
+		<td>Absolute value of <span class="code">number</span>.</td>
+		<td class="codenobr">Math.abs(-12)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.abs(-12));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.ceil(number)</td>
+		<td><span class="code">number</span> rounded up.</td>
+		<td class="codenobr">Math.ceil(5.4)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.ceil(5.4));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.floor(number)</td>
+		<td><span class="code">number</span> rounded down.</td>
+		<td class="codenobr">Math.floor(5.6)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.floor(5.6));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.max(numbers)</td>
+		<td>Highest <span class="code">Number</span> in <span class="code">numbers</span>.</td>
+		<td class="codenobr">Math.max(2, 5, 9, 3)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.max(2, 5, 9, 3));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.min(numbers)</td>
+		<td>Lowest <span class="code">Number</span> in <span class="code">numbers</span>.</td>
+		<td class="codenobr">Math.min(2, 5, 9, 3)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.min(2, 5, 9, 3));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.pow(number, power)</td>
+		<td><span class="code">number</span> to the power of <span class="code">power</span>.</td>
+		<td class="codenobr">Math.pow(2, 5)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.pow(2, 5));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.round(number)</td>
+		<td>Rounded <span class="code">number</span>.</td>
+		<td class="codenobr">Math.round(2.5)</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.round(2.5));
+		</script></td>
+	</tr>
+	<tr>
+		<td class="code">Math.random()</td>
+		<td>Random number between 0 and 1.</td>
+		<td class="codenobr">Math.random()</td>
+		<td style="text-align:center"><script type="text/javascript">
+			document.write(Math.random());
+		</script></td>
+	</tr>
+</table>
+<h3>Random Integer:</h3>
+<div class="codenobr"> var LOW = 1;<br>
+	var HIGH = 10;<br>
+	var RND1 = Math.random();<br>
+	var RND2 = Math.round(RND1 * (HIGH - LOW) + 1);<br>
+	document.write(RND2); </div>
+<div style="margin-top:10px">Random Integer between 1 and 10: <strong> 
+	<script type="text/javascript">
+	var LOW = 1;
+	var HIGH = 10;
+	var RND1 = Math.random();
+	var RND2 = Math.round(RND1 * (HIGH - LOW) + 1);
+	document.write(RND2);
+</script></strong> </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="docsTimeDirective">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Using a directive to manipulate the DOM</title>
+</head>
+<body>
+
+<h2>Using a directive to manipulate the DOM</h2>
+
+<div ng-controller="Controller">
+  Date format: <input ng-model="format"> <hr/>
+  Current time is: <span my-current-time="format"></span>
+</div>
+
+<script src="/common/js/angular/angular.js"></script>
+<script src="dom-directive.js"></script>
+</body>
+</html>

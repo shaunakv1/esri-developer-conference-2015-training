@@ -1,0 +1,43 @@
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Search</h2>
+
+      <form ng-submit="search(movieSearch)">
+        <p>Look for something in any of the data we have on a specific
+          movie: </p>
+
+        <input type="text" name="movieSearch"
+                       id="movieSearch" ng-model="movieSearch"/>
+        <a class="btn btn-default" ng-click="search(movieSearch)" href="">Search &raquo;</a>
+      </form>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Search in a specific category</h2>
+
+      <form ng-submit="catSearch($event, catPick, catText)">
+        <p>Pick a category and enter a search term</p>
+        <mcatdropdown local-model="catPick"></mcatdropdown>
+        <input ng-model="catText" type="text" name="catSearch"
+               id="catText"/>
+        <a class="btn btn-default" ng-click="catSearch($event, catPick, catText)" href="">Search &raquo;</a>
+      </form>
+
+    </div>
+    <div class="col-md-4">
+      <h2>Advanced Search</h2>
+
+      <p>Search across all the data</p>
+
+      <p><a class="btn btn-default" href="#/admin"
+            role="button">Launch &raquo;</a></p>
+    </div>
+  </div>
+  <hr>
+
+  <m-footer/>
+</div>
+<!-- /container -->

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="prodApp">
+<head>
+  <title>Retrieving Products</title>
+</head>
+<body>
+<div ng-controller="ProductCtrl">
+  <ul>
+    <li ng-repeat="product in products">{{product.productName}}</li>
+  </ul>
+</div>
+<script src="libs/angular.js"></script>
+<script src="app/controllers.js"></script>
+<script src="app/main.js"></script>
+</body>
+</html>

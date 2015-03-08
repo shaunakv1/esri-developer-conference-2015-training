@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="optionsApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Looking at ngOptions</title>
+</head>
+<body>
+<div ng-controller="OptionsObjCtrl">
+
+  <select name="someName" id="someNameId" ng-model="selectName"
+          ng-options="person.name for person in people track by person.id"></select>
+
+</div>
+
+<script src="/common/js/angular/angular.js"></script>
+<script src="ng-options.js"></script>
+</body>
+</html>

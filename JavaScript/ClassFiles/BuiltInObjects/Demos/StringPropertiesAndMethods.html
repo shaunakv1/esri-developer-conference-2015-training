@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>String Properties and Methods</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	var myString = "Webucator";
+</script>
+</head>
+<body>
+<h1>String Properties and Methods</h1>
+<h2>Properties</h2>
+<p><span class="code">myString</span> contains 
+"<strong><script type="text/javascript">document.write(myString);</script></strong>".</p>
+<table cellpadding="3" cellspacing="0">
+<tr>
+	<th>Property</th>
+	<th>Explanation</th>
+	<th>Code</th>
+	<th>Returns</th>
+</tr>
+<tr>
+	<td class="code">length</td>
+	<td>Read-only value containing the number of characters in the string.</td>
+	<td class="codenobr">myString.length</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+		document.write(myString.length);
+		</script>
+	</td>
+</tr>
+</table>
+<h2>Methods</h2>
+<p><span class="code">myString</span> contains
+"<strong><script type="text/javascript">document.write(myString);</script></strong>".
+<table cellpadding="3" cellspacing="0">
+<tr>
+	<th>Method</th>
+	<th>Explanation</th>
+	<th>Code</th>
+	<th>Returns</th>
+</tr>
+<tr>
+	<td class="code">charAt(position)</td>
+	<td>Returns the character at the specified position.</td>
+	<td class="codenobr">myString.charAt(4)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.charAt(4));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">charCodeAt(position)</td>
+	<td>Returns the Unicode character code of the character at the specified position.</td>
+	<td class="codenobr">myString.charCodeAt(4)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.charCodeAt(4));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">fromCharCode(characterCodes)</td>
+	<td>Returns the text representation of the specifies comma-delimited character codes. Used with <span class="code">String</span> rather than a specific String object.</td>
+	<td class="codenobr">String.fromCharCode(169)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(String.fromCharCode(169));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code" rowspan="2">indexOf(substring, startPosition)</td>
+	<td rowspan="2">Searches from <span class="code">startPosition</span> for <span class="code">substring</span>. Returns the position at which the <span class="code">substring</span> is found. If <span class="code">substring</span> is not found, returns -1.</td>
+	<td class="codenobr">myString.indexOf("cat")</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.indexOf("cat"));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="codenobr">myString.indexOf("cat", 5)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.indexOf("cat", 5));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code" rowspan="2">lastIndexOf(substring, endPosition)</td>
+	<td rowspan="2">Searches from the end of the string for <span class="code">substring</span> until <span class="code">endPosition</span> is reached. Returns the position at which the <span class="code">substring</span> is found. If <span class="code">substring</span> is not found, returns -1.</td>
+	<td class="codenobr">myString.lastIndexOf("cat")</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.lastIndexOf("cat"));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="codenobr">myString.lastIndexOf("cat", 5)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.lastIndexOf("cat", 5));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code" rowspan="2">substring(startPosition, endPosition)</td>
+	<td rowspan="2">Returns the substring beginning at <span class="code">startPosition</span> and ending with the character before <span class="code">endPosition</span>. <span class="code">endPosition</span> is optional. If it is excluded, the substring continues to the end of the string.</td>
+	<td class="codenobr">myString.substring(4, 7)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.substring(4, 7));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="codenobr">myString.substring(4)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.substring(4));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code" rowspan="2">substr(startPosition, length)</td>
+	<td rowspan="2">Returns the substring of <span class="code">length</span> characters beginning at <span class="code">startPosition</span>. <span class="code">length</span> is optional. If it is excluded, the substring continues to the end of the string.</td>
+	<td class="codenobr">myString.substr(4, 3)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.substr(4, 3));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="codenobr">myString.substr(4)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.substr(4));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">slice(startPosition, endPosition)</td>
+	<td>If <span class="code">End Position</span> is positive, same as <span class="code">substring(startPosition, endPosition)</span>.</td>
+	<td class="codenobr">myString.slice(4, 7)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.slice(4, 7));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">slice(startPosition, positionFromEnd)</td>
+	<td>If <span class="code">positionFromEnd</span> is negative, returns the the substring beginning at <span class="code">startPosition</span> and ending <span class="code">positionFromEnd</span> characters from the end of the string.</td>
+	<td class="codenobr">myString.slice(4, -2)</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.slice(4, -2));
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">split(delimiter)</td>
+	<td>Returns an array by splitting a string on the specified delimiter.</td>
+	<td class="codenobr">
+		var S = "A,B,C,D";<br>
+		var A = S.split(",");<br>
+		document.write(A[2]);
+	</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			var S = "A,B,C,D";
+			var A = S.split(",");
+			document.write(A[2]);
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">toLowerCase()</td>
+	<td>Returns the string in all lowercase letters.</td>
+	<td class="codenobr">myString.toLowerCase()</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.toLowerCase());
+		</script>
+	</td>
+</tr>
+<tr>
+	<td class="code">toUpperCase()</td>
+	<td>Returns the string in all uppercase letters.</td>
+	<td class="codenobr">myString.toUpperCase()</td>
+	<td style="text-align:center;">
+		<script type="text/javascript">
+			document.write(myString.toUpperCase());
+		</script>
+	</td>
+</tr>
+</table>
+</body>
+</html>

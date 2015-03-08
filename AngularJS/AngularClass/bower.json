@@ -1,0 +1,81 @@
+{
+  "name": "AngularClass",
+  "version": "1.1.0",
+  "private": true,
+  "authors": [
+    "John Paxton <johnpaxton@gmail.com>"
+  ],
+  "description": "Speeding Planet's AngularJS class",
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.3.8",
+    "angular-loader": "~1.3.8",
+    "angular-mocks": "~1.3.8",
+    "angular-route": "~1.3.8",
+    "angular-bootstrap": "~0.12.0",
+    "ui-router": "~0.2.13",
+    "angular": "~1.3.8",
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.3",
+    "underscore": "~1.7.0",
+    "jasmine": "~2.1.3",
+    "angular-scenario": "~1.3.x"
+  },
+  "preen": {
+    "angular": [
+      "*.js",
+      "*.css"
+    ],
+    "angular-bootstrap": [
+      "*.js"
+    ],
+    "ui-router": [
+      "*.js"
+    ],
+    "angular-loader": [
+      "*.js"
+    ],
+    "angular-mocks": [
+      "*.js"
+    ],
+    "angular-animate": [
+      "*.js",
+      "*.css"
+    ],
+    "angular-route": [
+      "*.js"
+    ],
+    "jasmine": [
+      "dist/jasmine-standalone-2*"
+    ],
+    "jquery": [
+      "dist/*.js"
+    ]
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "css": "dist/css/*.css*"
+    },
+    "angular-bootstrap": {
+      "js": "*.js"
+    },
+    "jasmine": {},
+    "jquery": {
+      "js": "dist/*.js"
+    },
+    "*": {
+      "js": "*.js",
+      "css": "**/*.css"
+    }
+  },
+  "resolutions": {
+    "angular": "~1.3.8"
+  }
+}

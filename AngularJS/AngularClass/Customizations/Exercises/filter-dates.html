@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="filterEx">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>An example of working with dateFilter</title>
+  <script src="/common/js/angular/angular.js"></script>
+  <script src="filter-dates.js"></script>
+</head>
+<body ng-controller="FilterCtrl">
+<h2>Setting date format preferences</h2>
+
+<form>
+  <label for="date-filter">Choose your date filter:</label>
+  <input type="text" id="date-filter" ng-model="dateFmt"/>
+  <button type="button" ng-click="formatDate(dateFmt)">Format date!</button>
+  <br/>
+</form>
+
+<div>
+  <p>Formatted date: {{ today }}</p>
+</div>
+
+</body>
+</html>

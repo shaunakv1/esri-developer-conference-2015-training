@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Canvas</title>
+<script>
+function drawPath() {
+	var canvas=document.getElementById("my-canvas");
+	if (canvas.getContext) {
+		alert("Canvas Supported.");
+		//create your awesome drawing here
+	} else {
+		alert("Canvas Not Supported.");	
+	}
+}
+</script>
+</head>
+<body>
+<canvas id="my-canvas" height="200" width="200">Your browser doesn't support canvas.</canvas>
+<button onclick="drawPath();">Draw</button>
+</body>
+</html>
+
