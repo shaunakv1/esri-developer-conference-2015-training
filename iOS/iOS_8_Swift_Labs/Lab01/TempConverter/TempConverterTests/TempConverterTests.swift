@@ -11,22 +11,15 @@ import XCTest
 
 class TempConverterTests: XCTestCase {
     
-    //var conv : MyConverter
+    var conv : MyConverter!
     
     override func setUp() {
         super.setUp()
-        
-        //conv = MyConverter()
-        
+        conv = MyConverter()
     }
     
     override func tearDown() {
         super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
     }
     
     func testPerformanceExample() {
@@ -38,12 +31,10 @@ class TempConverterTests: XCTestCase {
     }
     
     func testCelsiusToFarenheit(){
-        let c = MyConverter();
-        XCTAssert(c.convertToFarenite(100.0) == 212.0, "Shoud convert from Celsius to Farenheit")
+        XCTAssert(conv.convertToFarenite(100.0) == 212.0, "Shoud convert from Celsius to Farenheit")
     }
     
     func testFarenheitToCelsius(){
-        let c = MyConverter();
-        XCTAssert(c.convertToCelcius(212.0) == 100.0, "Shoud convert from Farenfeit to celsius")
+        XCTAssert(conv.convertToCelcius(212.0) == 100.0, "Shoud convert from Farenfeit to celsius")
     }
 }
