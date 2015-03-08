@@ -35,7 +35,7 @@ class TempConverterTests: XCTestCase {
     }
     
     func testFarenheitToCelsius(){
-        XCTAssert(conv.convertToCelcius(212.0) == 100.0, "Shoud convert from Farenfeit to celsius")
+        XCTAssert(conv.convertToCelsius(212.0) == 100.0, "Shoud convert from Farenfeit to celsius")
     }
     
     func testCelsiusToKelvin(){

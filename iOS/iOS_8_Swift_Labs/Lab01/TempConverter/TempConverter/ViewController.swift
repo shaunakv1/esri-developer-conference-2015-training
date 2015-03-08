@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onFareniteChanged(sender: UITextField) {
-        celsius.text =  "\(conv.convertToCelcius((sender.text as NSString).doubleValue))"
+        celsius.text =  "\(conv.convertToCelsius((sender.text as NSString).doubleValue))"
         celsius.reloadInputViews()
         
         kelvin.text = "\(conv.convertCelsiusToKelvin((celsius.text as NSString).doubleValue))"

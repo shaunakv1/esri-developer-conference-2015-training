@@ -9,7 +9,7 @@
 import Foundation
 
 class MyConverter {
-    func convertToCelcius(temp:Double) ->Double {
+    func convertToCelsius(temp:Double) ->Double {
         let tempC = (temp - 32.0) * (5.0/9.0)
         return tempC
     }
@@ -25,7 +25,7 @@ class MyConverter {
     }
     
     func convertKelvinToCelsius(temp:Double) ->Double {
-        let tempK = temp - 273.15
-        return tempK
+        let tempC = temp - 273.15
+        return tempC
     }
 }
