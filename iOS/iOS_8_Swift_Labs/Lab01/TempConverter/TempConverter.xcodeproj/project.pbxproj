@@ -81,14 +81,14 @@
 		AAC3D4331AACAFE300FE2F6E /* TempConverter */ = {
 			isa = PBXGroup;
 			children = (
+				AAC3D45C1AACC5C400FE2F6E /* TempConverterPlayground.playground */,
 				AAC3D4361AACAFE300FE2F6E /* AppDelegate.swift */,
+				AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */,
 				AAC3D4381AACAFE300FE2F6E /* ViewController.swift */,
-				AAC3D43A1AACAFE300FE2F6E /* Main.storyboard */,
 				AAC3D43D1AACAFE300FE2F6E /* Images.xcassets */,
 				AAC3D43F1AACAFE300FE2F6E /* LaunchScreen.xib */,
+				AAC3D43A1AACAFE300FE2F6E /* Main.storyboard */,
 				AAC3D4341AACAFE300FE2F6E /* Supporting Files */,
-				AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */,
-				AAC3D45C1AACC5C400FE2F6E /* TempConverterPlayground.playground */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";
@@ -415,6 +415,7 @@
 				AAC3D4521AACAFE300FE2F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAC3D4531AACAFE300FE2F6E /* Build configuration list for PBXNativeTarget "TempConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +424,7 @@
 				AAC3D4551AACAFE300FE2F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

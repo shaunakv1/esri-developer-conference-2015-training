@@ -15,19 +15,14 @@ htt.code
 htt.status = "haha"
 
 
+var arr = ["Apple", "Orange", "Banana"]
 
-var a : Int?
-
-a = 1
-//a = a! + 1
-
-if let b = a {
-    print("yes")
-}
-else{
-    print("no")
-}
+arr.count
 
 
-//var c = (let b = a)
+var foo = []
+
+
+
+
 
