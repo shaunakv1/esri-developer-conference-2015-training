@@ -13,6 +13,8 @@
 		AAC3D43E1AACAFE300FE2F6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC3D43D1AACAFE300FE2F6E /* Images.xcassets */; };
 		AAC3D4411AACAFE300FE2F6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAC3D43F1AACAFE300FE2F6E /* LaunchScreen.xib */; };
 		AAC3D44D1AACAFE300FE2F6E /* TempConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3D44C1AACAFE300FE2F6E /* TempConverterTests.swift */; };
+		AAC3D4591AACBB7D00FE2F6E /* MyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */; };
+		AAC3D45A1AACBCBF00FE2F6E /* MyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		AAC3D4461AACAFE300FE2F6E /* TempConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC3D44B1AACAFE300FE2F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC3D44C1AACAFE300FE2F6E /* TempConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterTests.swift; sourceTree = "<group>"; };
+		AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConverter.swift; sourceTree = "<group>"; };
+		AAC3D45C1AACC5C400FE2F6E /* TempConverterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TempConverterPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				AAC3D43D1AACAFE300FE2F6E /* Images.xcassets */,
 				AAC3D43F1AACAFE300FE2F6E /* LaunchScreen.xib */,
 				AAC3D4341AACAFE300FE2F6E /* Supporting Files */,
+				AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */,
+				AAC3D45C1AACC5C400FE2F6E /* TempConverterPlayground.playground */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC3D4591AACBB7D00FE2F6E /* MyConverter.swift in Sources */,
 				AAC3D4391AACAFE300FE2F6E /* ViewController.swift in Sources */,
 				AAC3D4371AACAFE300FE2F6E /* AppDelegate.swift in Sources */,
 			);
@@ -221,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC3D45A1AACBCBF00FE2F6E /* MyConverter.swift in Sources */,
 				AAC3D44D1AACAFE300FE2F6E /* TempConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
