@@ -18,4 +18,14 @@ class MyConverter {
         let tempF = temp * (9.0/5.0) + 32.0
         return tempF
     }
+    
+    func convertCelsiusToKelvin(temp:Double) ->Double {
+        let tempK = temp + 273.15
+        return tempK
+    }
+    
+    func convertKelvinToCelsius(temp:Double) ->Double {
+        let tempK = temp - 273.15
+        return tempK
+    }
 }
