@@ -43,8 +43,6 @@ class TempConverterTests: XCTestCase {
     }
     
     func testKelvinToCelsius(){
-        println("*************************************");
-        println(conv.convertKelvinToCelsius(200));
-        XCTAssert(conv.convertKelvinToCelsius(200) == -73.15, "Shoud convert from celsius kelvin")
+        XCTAssertEqualWithAccuracy(conv.convertKelvinToCelsius(200.00), Double(-73.15), 0.001, "Shoud convert from celsius kelvin")
     }
 }

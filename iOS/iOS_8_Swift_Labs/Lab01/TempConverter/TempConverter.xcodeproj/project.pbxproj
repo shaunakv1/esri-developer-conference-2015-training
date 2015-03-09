@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA1396C31AAE08A300A51A91 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		AAC3D4311AACAFE300FE2F6E /* TempConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC3D4351AACAFE300FE2F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC3D4361AACAFE300FE2F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		AAC3D44B1AACAFE300FE2F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC3D44C1AACAFE300FE2F6E /* TempConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConverterTests.swift; sourceTree = "<group>"; };
 		AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyConverter.swift; sourceTree = "<group>"; };
-		AAC3D45C1AACC5C400FE2F6E /* TempConverterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TempConverterPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,6 @@
 		AAC3D4331AACAFE300FE2F6E /* TempConverter */ = {
 			isa = PBXGroup;
 			children = (
-				AAC3D45C1AACC5C400FE2F6E /* TempConverterPlayground.playground */,
 				AAC3D4361AACAFE300FE2F6E /* AppDelegate.swift */,
 				AAC3D4581AACBB7D00FE2F6E /* MyConverter.swift */,
 				AAC3D4381AACAFE300FE2F6E /* ViewController.swift */,
@@ -89,6 +88,7 @@
 				AAC3D43F1AACAFE300FE2F6E /* LaunchScreen.xib */,
 				AAC3D43A1AACAFE300FE2F6E /* Main.storyboard */,
 				AAC3D4341AACAFE300FE2F6E /* Supporting Files */,
+				AA1396C31AAE08A300A51A91 /* MyPlayground.playground */,
 			);
 			path = TempConverter;
 			sourceTree = "<group>";

@@ -11,18 +11,18 @@ import Foundation
 class MyConverter {
     
     func convertToCelsius(temp:Double) ->Double {
-        return (temp - 32.0) * (5.0/9.0)
+        return  round((temp - 32.0) * (5.0/9.0) * 100)/100
     }
     
     func convertToFarenite(temp:Double) ->Double {
-        return temp * (9.0/5.0) + 32.0
+        return round((temp * (9.0/5.0) + 32.0) * 100 )/100
     }
     
     func convertCelsiusToKelvin(temp:Double) ->Double {
-        return temp + 273.15
+        return round( (temp + 273.15) * 100)/100
     }
     
     func convertKelvinToCelsius(temp:Double) ->Double {
-        return temp - 273.15
+        return round( (temp - 273.15) * 100)/100
     }
 }

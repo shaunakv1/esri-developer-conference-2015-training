@@ -2,11 +2,8 @@
 
 //import TempConveter
 
-var a = -22.0;
 
-a == -22.0
-
-
+200 - 273.15 == -73.15
 
 
 
