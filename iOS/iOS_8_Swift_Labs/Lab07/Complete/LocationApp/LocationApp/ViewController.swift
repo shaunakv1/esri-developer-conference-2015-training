@@ -43,7 +43,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let mostRecentLocation: CLLocation = locations.last as CLLocation
-        
+        println((mostRecentLocation.coordinate.latitude));
         latitudeLabel.text = "\(mostRecentLocation.coordinate.latitude)"
         longitudeLabel.text = "\(mostRecentLocation.coordinate.longitude)"
         horizAccLabel.text = "\(mostRecentLocation.horizontalAccuracy)"

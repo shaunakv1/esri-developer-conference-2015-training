@@ -40,7 +40,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let loc: CLLocation = locations.last as CLLocation
-        println("\(loc.coordinate.latitude),\(loc.coordinate.longitude)");
         coord.text = "\(loc.coordinate.latitude),\(loc.coordinate.longitude)"
         altitude.text = "\(loc.altitude)"
         accuracy.text = "\(loc.horizontalAccuracy) (H), \(loc.verticalAccuracy) (V)"

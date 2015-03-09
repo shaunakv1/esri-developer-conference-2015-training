@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AAC3D4301AACAFE300FE2F6E"
-               BuildableName = "TempConverter.app"
-               BlueprintName = "TempConverter"
-               ReferencedContainer = "container:TempConverter.xcodeproj">
+               BlueprintIdentifier = "B8D1F32C1A08340E00A77B92"
+               BuildableName = "LocationApp.app"
+               BlueprintName = "LocationApp"
+               ReferencedContainer = "container:LocationApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AAC3D4451AACAFE300FE2F6E"
-               BuildableName = "TempConverterTests.xctest"
-               BlueprintName = "TempConverterTests"
-               ReferencedContainer = "container:TempConverter.xcodeproj">
+               BlueprintIdentifier = "B8D1F3411A08340E00A77B92"
+               BuildableName = "LocationAppTests.xctest"
+               BlueprintName = "LocationAppTests"
+               ReferencedContainer = "container:LocationApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AAC3D4451AACAFE300FE2F6E"
-               BuildableName = "TempConverterTests.xctest"
-               BlueprintName = "TempConverterTests"
-               ReferencedContainer = "container:TempConverter.xcodeproj">
+               BlueprintIdentifier = "B8D1F3411A08340E00A77B92"
+               BuildableName = "LocationAppTests.xctest"
+               BlueprintName = "LocationAppTests"
+               ReferencedContainer = "container:LocationApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAC3D4301AACAFE300FE2F6E"
-            BuildableName = "TempConverter.app"
-            BlueprintName = "TempConverter"
-            ReferencedContainer = "container:TempConverter.xcodeproj">
+            BlueprintIdentifier = "B8D1F32C1A08340E00A77B92"
+            BuildableName = "LocationApp.app"
+            BlueprintName = "LocationApp"
+            ReferencedContainer = "container:LocationApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAC3D4301AACAFE300FE2F6E"
-            BuildableName = "TempConverter.app"
-            BlueprintName = "TempConverter"
-            ReferencedContainer = "container:TempConverter.xcodeproj">
+            BlueprintIdentifier = "B8D1F32C1A08340E00A77B92"
+            BuildableName = "LocationApp.app"
+            BlueprintName = "LocationApp"
+            ReferencedContainer = "container:LocationApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,10 +97,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAC3D4301AACAFE300FE2F6E"
-            BuildableName = "TempConverter.app"
-            BlueprintName = "TempConverter"
-            ReferencedContainer = "container:TempConverter.xcodeproj">
+            BlueprintIdentifier = "B8D1F32C1A08340E00A77B92"
+            BuildableName = "LocationApp.app"
+            BlueprintName = "LocationApp"
+            ReferencedContainer = "container:LocationApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
