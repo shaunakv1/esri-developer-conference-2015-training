@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, CLLocationManagerDelegate {
+    
+    var locationManager: CLLocationManager!
+    var startLocation: CLLocation?
+    
+    
     @IBOutlet weak var celsius: UITextField!
     @IBOutlet weak var fahrenheit: UITextField!
     @IBOutlet weak var kelvin: UITextField!
+    
+    @IBOutlet weak var coord: UILabel!
+    @IBOutlet weak var altitude: UILabel!
+    @IBOutlet weak var accuracy: UILabel!
     
     var conv : MyConverter!
     
@@ -20,8 +29,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         conv = MyConverter()
+        
+        locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        startLocation = nil
     }
-
+    
+    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let loc: CLLocation = locations.last as CLLocation
+        println("\(loc.coordinate.latitude),\(loc.coordinate.longitude)");
+        coord.text = "\(loc.coordinate.latitude),\(loc.coordinate.longitude)"
+        altitude.text = "\(loc.altitude)"
+        accuracy.text = "\(loc.horizontalAccuracy) (H), \(loc.verticalAccuracy) (V)"
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

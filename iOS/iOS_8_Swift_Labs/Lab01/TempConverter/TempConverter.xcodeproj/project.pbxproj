@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1396C51AAE31AD00A51A91 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1396C41AAE31AD00A51A91 /* CoreLocation.framework */; };
 		AAC3D4371AACAFE300FE2F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3D4361AACAFE300FE2F6E /* AppDelegate.swift */; };
 		AAC3D4391AACAFE300FE2F6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC3D4381AACAFE300FE2F6E /* ViewController.swift */; };
 		AAC3D43C1AACAFE300FE2F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC3D43A1AACAFE300FE2F6E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		AA1396C31AAE08A300A51A91 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		AA1396C41AAE31AD00A51A91 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AAC3D4311AACAFE300FE2F6E /* TempConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC3D4351AACAFE300FE2F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC3D4361AACAFE300FE2F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA1396C51AAE31AD00A51A91 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		AAC3D4281AACAFE300FE2F6E = {
 			isa = PBXGroup;
 			children = (
+				AA1396C41AAE31AD00A51A91 /* CoreLocation.framework */,
 				AAC3D4331AACAFE300FE2F6E /* TempConverter */,
 				AAC3D4491AACAFE300FE2F6E /* TempConverterTests */,
 				AAC3D4321AACAFE300FE2F6E /* Products */,
