@@ -62,20 +62,14 @@
                                     <action selector="onKelvinChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="dQ0-DP-zzk"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="˚C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAZ-OQ-6LK">
-                                <rect key="frame" x="246" y="90" width="42" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="˚F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AX-v7-Y5w">
-                                <rect key="frame" x="246" y="151" width="42" height="28"/>
+                                <rect key="frame" x="250" y="151" width="42" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="˚K" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNl-db-ltS">
-                                <rect key="frame" x="246" y="218" width="42" height="28"/>
+                                <rect key="frame" x="250" y="218" width="42" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -127,6 +121,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="˚C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAZ-OQ-6LK">
+                                <rect key="frame" x="250" y="90" width="42" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
@@ -137,6 +137,7 @@
                             <constraint firstItem="KGU-YB-XGQ" firstAttribute="bottom" secondItem="ASX-f7-7SA" secondAttribute="bottom" id="73G-UK-DzJ"/>
                             <constraint firstAttribute="centerY" secondItem="j2W-cx-f9d" secondAttribute="centerY" constant="-252" id="9E8-q1-GLf"/>
                             <constraint firstItem="vAZ-OQ-6LK" firstAttribute="bottom" secondItem="kUh-aZ-aMz" secondAttribute="bottom" id="Ay5-cm-zDL"/>
+                            <constraint firstItem="vAZ-OQ-6LK" firstAttribute="trailing" secondItem="kUh-aZ-aMz" secondAttribute="trailing" constant="50" id="CLa-de-MQl"/>
                             <constraint firstItem="Hhq-gF-xiP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="FPP-Ka-bMH"/>
                             <constraint firstItem="kUh-aZ-aMz" firstAttribute="top" secondItem="Hhq-gF-xiP" secondAttribute="bottom" constant="40" id="FaG-KC-6qD"/>
                             <constraint firstItem="esB-x1-n8s" firstAttribute="bottom" secondItem="kUh-aZ-aMz" secondAttribute="bottom" id="FlB-Hw-YlH"/>
@@ -145,12 +146,14 @@
                             <constraint firstItem="vRQ-ec-C4H" firstAttribute="top" secondItem="kUh-aZ-aMz" secondAttribute="bottom" constant="35" id="OK3-2A-Q7E"/>
                             <constraint firstItem="kcV-Yw-qIw" firstAttribute="leading" secondItem="uOk-wz-On7" secondAttribute="trailing" constant="3" id="XpU-XC-FQX"/>
                             <constraint firstItem="kUh-aZ-aMz" firstAttribute="top" secondItem="Hhq-gF-xiP" secondAttribute="bottom" constant="40" id="YFS-qn-P4X"/>
+                            <constraint firstItem="ASX-f7-7SA" firstAttribute="trailing" secondItem="eNl-db-ltS" secondAttribute="trailing" constant="-50" id="YdL-7y-fht"/>
                             <constraint firstItem="kUh-aZ-aMz" firstAttribute="leading" secondItem="esB-x1-n8s" secondAttribute="trailing" constant="8" id="Yoz-gm-NLE"/>
                             <constraint firstItem="vRQ-ec-C4H" firstAttribute="leading" secondItem="UQ4-4h-rSl" secondAttribute="trailing" constant="8" id="bey-AZ-Mav"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hhq-gF-xiP" secondAttribute="trailing" constant="-16" id="cPf-2l-Bqt"/>
                             <constraint firstAttribute="centerY" secondItem="zzS-wF-OJj" secondAttribute="centerY" constant="-252" id="cdU-SO-fPC"/>
                             <constraint firstItem="7AX-v7-Y5w" firstAttribute="bottom" secondItem="vRQ-ec-C4H" secondAttribute="bottom" id="dBS-pv-jJQ"/>
                             <constraint firstItem="ASX-f7-7SA" firstAttribute="top" secondItem="vRQ-ec-C4H" secondAttribute="bottom" constant="35" id="e2J-qv-dQs"/>
+                            <constraint firstItem="7AX-v7-Y5w" firstAttribute="trailing" secondItem="vRQ-ec-C4H" secondAttribute="trailing" constant="50" id="fhK-Br-agK"/>
                             <constraint firstItem="Hhq-gF-xiP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="gHW-W3-7fh"/>
                             <constraint firstItem="ASX-f7-7SA" firstAttribute="leading" secondItem="KGU-YB-XGQ" secondAttribute="trailing" constant="8" id="iZJ-CY-zye"/>
                             <constraint firstItem="qqv-IO-04p" firstAttribute="leading" secondItem="nYg-wD-Xu1" secondAttribute="trailing" constant="3" id="qcg-tv-D7R"/>
